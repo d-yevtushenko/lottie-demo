@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lottie demo files by Dmytro Yevtushenko</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript"></script>
+	<script src="js/lottie_light.js"></script>
+	<!--<script src="js/bodymovin.min.js"></script>-->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<section id="slide01">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2><b>Lottie</b> demo files by <b>Dmytro Yevtushenko</b></h2>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row" style="padding: 70px 0;">
+				<div class="col-md-2 col-md-offset-1"><div class="ann" id="bd1"></div><p>People Counting</p></div>
+				<div class="col-md-2"><div class="ann" id="bd2"></div><p>Path Analytics</p></div>
+				<div class="col-md-2"><div class="ann" id="bd3"></div><p>Revenue Analytics</p></div>
+				<div class="col-md-2"><div class="ann" id="bd4"></div><p>Occpancy Management</p></div>
+				<div class="col-md-2"><div class="ann" id="bd5"></div><p>Managed Cleaning</p></div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-gr" id="slide02">
+		<div class="container">
+		    <div class="row">
+		        <div class="lot-d" id="bd10"></div>
+		    </div>
+		    </div>
+		    </section>
+		    <section id="slide02">
+		    <div class="container">
+			<div class="row">
+               <div class="lot-d" id="bd6"></div>
+               <h2>Measurable Results</h2>
+               <div class="lot-d" id="bd7"></div>
+               <h2>Targeted Traffic on Demand</h2>
+               <div class="lot-d" id="bd8"></div>
+               <h2>Stop wasting time and money</h2>
+               <div class="lot-d" id="bd9"></div>
+               <h2 style="margin-bottom: 100px;">No agency or developer required</h2>
+             </div>
+       </div>
+ </section>
+ <script>
+  anim1Container = document.getElementById('bd1');
+  var params1 = {
+    container: anim1Container,
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: 'img/ko-01.json'
+  };
+  anim2Container = document.getElementById('bd2');
+  var params2 = {
+    container: anim2Container,
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: 'img/ko-02.json'
+  };
+  anim3Container = document.getElementById('bd3');
+  var params3 = {
+    container: anim3Container,
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: 'img/ko-03.json'
+  };
+  anim4Container = document.getElementById('bd4');
+  var params4 = {
+    container: anim4Container,
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: 'img/ko-04.json'
+  };
+  anim5Container = document.getElementById('bd5');
+  var params5 = {
+    container: anim5Container,
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: 'img/ko-05.json'
+  };
+  var an6 = {
+        wrapper: document.getElementById('bd6'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'img/anim-01.json'
+    };
+    var an7 = {
+        wrapper: document.getElementById('bd7'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'img/anim-02.json'
+    };
+    var an8 = {
+        wrapper: document.getElementById('bd8'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'img/anim-03.json'
+    };
+    var an9 = {
+        wrapper: document.getElementById('bd9'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'img/anim-04.json'
+    };
+     var an10 = {
+        wrapper: document.getElementById('bd10'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'img/data-anim-01.json'
+    };
+  
+  var anim1 = bodymovin.loadAnimation(params1), anim2 = bodymovin.loadAnimation(params2), anim3 = bodymovin.loadAnimation(params3), anim4 = bodymovin.loadAnimation(params4), anim5 = bodymovin.loadAnimation(params5), anim6 = bodymovin.loadAnimation(an6), anim7 = bodymovin.loadAnimation(an7), anim8 = bodymovin.loadAnimation(an8), anim9 = bodymovin.loadAnimation(an9), anim10 = bodymovin.loadAnimation(an10);
+
+
+  anim1Container.addEventListener("mouseover", function(){
+    anim1.play();
+  });
+  anim1Container.addEventListener("mouseout", function(){
+    anim1.pause();
+  });
+
+  anim2Container.addEventListener("mouseover", function(){
+    anim2.play();
+  });
+  anim2Container.addEventListener("mouseout", function(){
+    anim2.pause();
+  });
+
+  anim3Container.addEventListener("mouseover", function(){
+    anim3.play();
+  });
+  anim3Container.addEventListener("mouseout", function(){
+    anim3.pause();
+  });
+
+  anim4Container.addEventListener("mouseover", function(){
+    anim4.play();
+  });
+  anim4Container.addEventListener("mouseout", function(){
+    anim4.pause();
+  });
+
+  anim5Container.addEventListener("mouseover", function(){
+    anim5.play();
+  });
+  anim5Container.addEventListener("mouseout", function(){
+    anim5.pause();
+  });
+</script>
+</body>
+</html>
